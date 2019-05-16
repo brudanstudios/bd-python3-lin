@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+CURRENT_DIR="$( cd -P "$( dirname "${BASH_SOURCE:-$0}" )" && pwd )"
+
+export LD_LIBRARY_PATH=$CURRENT_DIR/lib:$CURRENT_DIR/lib64:$LD_LIBRARY_PATH
+
+$CURRENT_DIR/bin/python3.7 "$@"
