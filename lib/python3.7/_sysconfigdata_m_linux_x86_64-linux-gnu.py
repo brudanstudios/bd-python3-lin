@@ -1,13 +1,3 @@
-import os
-
-root_dir = os.path.dirname(os.path.dirname(os.path.abspath(os.__file__)))
-
-bin_dir = os.path.join(root_dir, 'bin')
-
-lib_dir = os.path.join(root_dir, 'lib')
-lib_python37_dir = os.path.join(lib_dir, 'python3.7')
-
-
 # system configuration generated and used by the sysconfig module
 build_time_vars = {'ABIFLAGS': 'm',
  'AC_APPLE_UNIVERSAL_BUILD': 0,
@@ -18,9 +8,9 @@ build_time_vars = {'ABIFLAGS': 'm',
  'BASECFLAGS': '-Wno-unused-result -Wsign-compare',
  'BASECPPFLAGS': '',
  'BASEMODLIBS': '',
- 'BINDIR': '/Volumes/profiles/geosam/.python-3.7.3/bin',
- 'BINLIBDEST': '/Volumes/profiles/geosam/.python-3.7.3/lib/python3.7',
- 'BLDLIBRARY': '-L. -lpython3.7m',
+ 'BINDIR': '/Volumes/data/python3/bin',
+ 'BINLIBDEST': '/Volumes/data/python3/lib/python3.7',
+ 'BLDLIBRARY': 'libpython3.7m.a',
  'BLDSHARED': 'gcc -pthread -shared',
  'BUILDEXE': '',
  'BUILDPYTHON': 'python',
@@ -29,9 +19,8 @@ build_time_vars = {'ABIFLAGS': 'm',
  'CC': 'gcc -pthread',
  'CCSHARED': '-fPIC',
  'CFLAGS': '-Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall',
- 'CFLAGSFORSHARED': '-fPIC',
+ 'CFLAGSFORSHARED': '',
  'CFLAGS_ALIASING': '',
- 'CFLAGS_NODIST': '',
  'CONFIGFILES': 'configure configure.ac acconfig.h pyconfig.h.in '
                 'Makefile.pre.in',
  'CONFIGURE_CFLAGS': '',
@@ -42,24 +31,22 @@ build_time_vars = {'ABIFLAGS': 'm',
  'CONFIGURE_CPPFLAGS': '',
  'CONFIGURE_LDFLAGS': '',
  'CONFIGURE_LDFLAGS_NODIST': '',
- 'CONFIG_ARGS': "'--prefix=/Volumes/profiles/geosam/.python-3.7.3' "
-                "'--enable-shared'",
- 'CONFINCLUDEDIR': '/Volumes/profiles/geosam/.python-3.7.3/include',
- 'CONFINCLUDEPY': '/Volumes/profiles/geosam/.python-3.7.3/include/python3.7m',
+ 'CONFIG_ARGS': "'--enable-optimizations' '--prefix=/Volumes/data/python3'",
+ 'CONFINCLUDEDIR': '/Volumes/data/python3/include',
+ 'CONFINCLUDEPY': '/Volumes/data/python3/include/python3.7m',
  'COREPYTHONPATH': '',
- 'COVERAGE_INFO': '/tmp/6c89eb0b0832460eaaf9b69289aa7bfe/Python-3.7.3/coverage.info',
- 'COVERAGE_REPORT': '/tmp/6c89eb0b0832460eaaf9b69289aa7bfe/Python-3.7.3/lcov-report',
+ 'COVERAGE_INFO': '/Volumes/data/Python-3.7.9/coverage.info',
+ 'COVERAGE_REPORT': '/Volumes/data/Python-3.7.9/lcov-report',
  'COVERAGE_REPORT_OPTIONS': '--no-branch-coverage --title "CPython lcov '
                             'report"',
  'CPPFLAGS': '-I. -I./Include',
  'CXX': 'g++ -pthread',
- 'DESTDIRS': '/Volumes/profiles/geosam/.python-3.7.3 '
-             '/Volumes/profiles/geosam/.python-3.7.3/lib '
-             '/Volumes/profiles/geosam/.python-3.7.3/lib/python3.7 '
-             '/Volumes/profiles/geosam/.python-3.7.3/lib/python3.7/lib-dynload',
- 'DESTLIB': '/Volumes/profiles/geosam/.python-3.7.3/lib/python3.7',
+ 'DESTDIRS': '/Volumes/data/python3 /Volumes/data/python3/lib '
+             '/Volumes/data/python3/lib/python3.7 '
+             '/Volumes/data/python3/lib/python3.7/lib-dynload',
+ 'DESTLIB': '/Volumes/data/python3/lib/python3.7',
  'DESTPATH': '',
- 'DESTSHARED': '/Volumes/profiles/geosam/.python-3.7.3/lib/python3.7/lib-dynload',
+ 'DESTSHARED': '/Volumes/data/python3/lib/python3.7/lib-dynload',
  'DFLAGS': '',
  'DIRMODE': 755,
  'DIST': 'README.rst ChangeLog configure configure.ac acconfig.h pyconfig.h.in '
@@ -494,37 +481,36 @@ build_time_vars = {'ABIFLAGS': 'm',
  'HAVE_ZLIB_COPY': 1,
  'HAVE__GETPTY': 0,
  'HOST_GNU_TYPE': 'x86_64-pc-linux-gnu',
- 'INCLDIRSTOMAKE': '/Volumes/profiles/geosam/.python-3.7.3/include '
-                   '/Volumes/profiles/geosam/.python-3.7.3/include '
-                   '/Volumes/profiles/geosam/.python-3.7.3/include/python3.7m '
-                   '/Volumes/profiles/geosam/.python-3.7.3/include/python3.7m',
- 'INCLUDEDIR': '/Volumes/profiles/geosam/.python-3.7.3/include',
- 'INCLUDEPY': '/Volumes/profiles/geosam/.python-3.7.3/include/python3.7m',
+ 'INCLDIRSTOMAKE': '/Volumes/data/python3/include '
+                   '/Volumes/data/python3/include '
+                   '/Volumes/data/python3/include/python3.7m '
+                   '/Volumes/data/python3/include/python3.7m',
+ 'INCLUDEDIR': '/Volumes/data/python3/include',
+ 'INCLUDEPY': '/Volumes/data/python3/include/python3.7m',
  'INSTALL': '/usr/bin/install -c',
  'INSTALL_DATA': '/usr/bin/install -c -m 644',
  'INSTALL_PROGRAM': '/usr/bin/install -c',
  'INSTALL_SCRIPT': '/usr/bin/install -c',
  'INSTALL_SHARED': '/usr/bin/install -c -m 555',
- 'INSTSONAME': 'libpython3.7m.so.1.0',
+ 'INSTSONAME': 'libpython3.7m.a',
  'IO_H': 'Modules/_io/_iomodule.h',
  'IO_OBJS': '\\',
  'LDCXXSHARED': 'g++ -pthread -shared',
  'LDFLAGS': '',
- 'LDFLAGS_NODIST': '',
  'LDLAST': '',
- 'LDLIBRARY': 'libpython3.7m.so',
+ 'LDLIBRARY': 'libpython3.7m.a',
  'LDLIBRARYDIR': '',
  'LDSHARED': 'gcc -pthread -shared',
  'LDVERSION': '3.7m',
  'LIBC': '',
- 'LIBDEST': '/Volumes/profiles/geosam/.python-3.7.3/lib/python3.7',
- 'LIBDIR': '/Volumes/profiles/geosam/.python-3.7.3/lib',
+ 'LIBDEST': '/Volumes/data/python3/lib/python3.7',
+ 'LIBDIR': '/Volumes/data/python3/lib',
  'LIBFFI_INCLUDEDIR': '',
  'LIBM': '-lm',
  'LIBOBJDIR': 'Python/',
  'LIBOBJS': '',
- 'LIBPC': '/Volumes/profiles/geosam/.python-3.7.3/lib/pkgconfig',
- 'LIBPL': '/Volumes/profiles/geosam/.python-3.7.3/lib/python3.7/config-3.7m-x86_64-linux-gnu',
+ 'LIBPC': '/Volumes/data/python3/lib/pkgconfig',
+ 'LIBPL': '/Volumes/data/python3/lib/python3.7/config-3.7m-x86_64-linux-gnu',
  'LIBRARY': 'libpython3.7m.a',
  'LIBRARY_OBJS': '\\',
  'LIBRARY_OBJS_OMIT_FROZEN': '\\',
@@ -541,13 +527,13 @@ build_time_vars = {'ABIFLAGS': 'm',
  'LOG1P_DROPS_ZERO_SIGN': 0,
  'MACHDEP': 'linux',
  'MACHDEP_OBJS': '',
- 'MACHDESTLIB': '/Volumes/profiles/geosam/.python-3.7.3/lib/python3.7',
+ 'MACHDESTLIB': '/Volumes/data/python3/lib/python3.7',
  'MACOSX_DEPLOYMENT_TARGET': '',
  'MAINCC': 'gcc -pthread',
  'MAJOR_IN_MKDEV': 0,
  'MAJOR_IN_SYSMACROS': 0,
  'MAKESETUP': './Modules/makesetup',
- 'MANDIR': '/Volumes/profiles/geosam/.python-3.7.3/share/man',
+ 'MANDIR': '/Volumes/data/python3/share/man',
  'MKDIR_P': '/usr/bin/mkdir -p',
  'MODBUILT_NAMES': 'posix  errno  pwd  _sre  _codecs  _weakref  _functools  '
                    '_operator  _collections  _abc  itertools  atexit  _signal  '
@@ -598,7 +584,7 @@ build_time_vars = {'ABIFLAGS': 'm',
  'PTHREAD_KEY_T_IS_COMPATIBLE_WITH_INT': 1,
  'PTHREAD_SYSTEM_SCHED_SUPPORTED': 1,
  'PURIFY': '',
- 'PY3LIBRARY': 'libpython3.so',
+ 'PY3LIBRARY': '',
  'PYLONG_BITS_IN_DIGIT': 0,
  'PYTHON': 'python',
  'PYTHONFRAMEWORK': '',
@@ -614,18 +600,20 @@ build_time_vars = {'ABIFLAGS': 'm',
                              '-fwrapv -O3 -Wall -std=c99 -Wextra '
                              '-Wno-unused-result -Wno-unused-parameter '
                              '-Wno-missing-field-initializers '
-                             '-Werror=implicit-function-declaration -I. '
-                             '-I./Include -fPIC -DPy_BUILD_CORE_BUILTIN',
+                             '-Werror=implicit-function-declaration '
+                             '-fprofile-use -fprofile-correction -I. '
+                             '-I./Include -DPy_BUILD_CORE_BUILTIN',
  'PY_CFLAGS': '-Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall',
  'PY_CFLAGS_NODIST': '-std=c99 -Wextra -Wno-unused-result '
                      '-Wno-unused-parameter -Wno-missing-field-initializers '
-                     '-Werror=implicit-function-declaration',
+                     '-Werror=implicit-function-declaration -fprofile-use '
+                     '-fprofile-correction',
  'PY_COERCE_C_LOCALE': 1,
  'PY_CORE_CFLAGS': '-Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 '
                    '-Wall -std=c99 -Wextra -Wno-unused-result '
                    '-Wno-unused-parameter -Wno-missing-field-initializers '
-                   '-Werror=implicit-function-declaration -I. -I./Include '
-                   '-fPIC -DPy_BUILD_CORE',
+                   '-Werror=implicit-function-declaration -fprofile-use '
+                   '-fprofile-correction -I. -I./Include -DPy_BUILD_CORE',
  'PY_CORE_LDFLAGS': '',
  'PY_CPPFLAGS': '-I. -I./Include',
  'PY_FORMAT_SIZE_T': '"z"',
@@ -636,17 +624,17 @@ build_time_vars = {'ABIFLAGS': 'm',
  'PY_STDMODULE_CFLAGS': '-Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv '
                         '-O3 -Wall -std=c99 -Wextra -Wno-unused-result '
                         '-Wno-unused-parameter -Wno-missing-field-initializers '
-                        '-Werror=implicit-function-declaration -I. -I./Include '
-                        '-fPIC',
+                        '-Werror=implicit-function-declaration -fprofile-use '
+                        '-fprofile-correction -I. -I./Include',
  'Py_DEBUG': 0,
- 'Py_ENABLE_SHARED': 1,
+ 'Py_ENABLE_SHARED': 0,
  'Py_HASH_ALGORITHM': 0,
  'QUICKTESTOPTS': '-x test_subprocess test_io test_lib2to3 \\',
  'READELF': 'readelf',
  'RESSRCDIR': 'Mac/Resources/framework',
  'RETSIGTYPE': 'void',
- 'RUNSHARED': 'LD_LIBRARY_PATH=/tmp/6c89eb0b0832460eaaf9b69289aa7bfe/Python-3.7.3',
- 'SCRIPTDIR': '/Volumes/profiles/geosam/.python-3.7.3/lib',
+ 'RUNSHARED': '',
+ 'SCRIPTDIR': '/Volumes/data/python3/lib',
  'SETPGRP_HAVE_ARG': 0,
  'SGI_ABI': '@SGI_ABI@',
  'SHELL': '/bin/sh',
@@ -673,7 +661,7 @@ build_time_vars = {'ABIFLAGS': 'm',
  'SIZEOF_WCHAR_T': 4,
  'SIZEOF__BOOL': 1,
  'SOABI': 'cpython-37m-x86_64-linux-gnu',
- 'SRCDIRS': 'Parser Objects Python Modules Programs',
+ 'SRCDIRS': 'Parser Objects Python Modules Modules/_io Programs',
  'SRC_GDB_HOOKS': './Tools/gdb/libpython.py',
  'STDC_HEADERS': 1,
  'STRICT_SYSV_CURSES': "/* Don't use ncurses extensions */",
@@ -687,11 +675,9 @@ build_time_vars = {'ABIFLAGS': 'm',
  'TCLTK_LIBS': '',
  'TESTOPTS': '',
  'TESTPATH': '',
- 'TESTPYTHON': 'LD_LIBRARY_PATH=/tmp/6c89eb0b0832460eaaf9b69289aa7bfe/Python-3.7.3 '
-               './python',
+ 'TESTPYTHON': './python',
  'TESTPYTHONOPTS': '',
- 'TESTRUNNER': 'LD_LIBRARY_PATH=/tmp/6c89eb0b0832460eaaf9b69289aa7bfe/Python-3.7.3 '
-               './python ./Tools/scripts/run_tests.py',
+ 'TESTRUNNER': './python ./Tools/scripts/run_tests.py',
  'TESTTIMEOUT': 1200,
  'TIMEMODULE_LIB': 0,
  'TIME_WITH_SYS_TIME': 1,
@@ -702,6 +688,7 @@ build_time_vars = {'ABIFLAGS': 'm',
  'USE_COMPUTED_GOTOS': 0,
  'VERSION': '3.7',
  'WINDOW_HAS_FLAGS': 0,
+ 'WITH_DECIMAL_CONTEXTVAR': 1,
  'WITH_DOC_STRINGS': 1,
  'WITH_DTRACE': 0,
  'WITH_DYLD': 0,
@@ -711,9 +698,9 @@ build_time_vars = {'ABIFLAGS': 'm',
  'WITH_VALGRIND': 0,
  'X87_DOUBLE_ROUNDING': 0,
  'XMLLIBSUBDIRS': 'xml xml/dom xml/etree xml/parsers xml/sax',
- 'abs_builddir': '/tmp/6c89eb0b0832460eaaf9b69289aa7bfe/Python-3.7.3',
- 'abs_srcdir': '/tmp/6c89eb0b0832460eaaf9b69289aa7bfe/Python-3.7.3',
- 'datarootdir': '/Volumes/profiles/geosam/.python-3.7.3/share',
- 'exec_prefix': '/Volumes/profiles/geosam/.python-3.7.3',
- 'prefix': '/Volumes/profiles/geosam/.python-3.7.3',
+ 'abs_builddir': '/Volumes/data/Python-3.7.9',
+ 'abs_srcdir': '/Volumes/data/Python-3.7.9',
+ 'datarootdir': '/Volumes/data/python3/share',
+ 'exec_prefix': '/Volumes/data/python3',
+ 'prefix': '/Volumes/data/python3',
  'srcdir': '.'}
